@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, NAFIJ! 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            overflow: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 4em;
+            margin-top: 20%;
+            color: #FFFFFF;
+            animation: glow 1.5s infinite alternate;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #AAAAAA;
+            color: BLACK;
+            border: 666666;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        button:hover {
+            background-color: #CCFF66;
+        }
+        #hiddenImage {
+            display: none;
+            margin: 20px auto;
+            width: 300px;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #0066FF, 0 0 20px #00CCFF, 0 0 30px #9933FF;
+            }
+            to {
+                text-shadow: 0 0 20px #ffaaaa, 0 0 30px #0099FF, 0 0 40px #FFFFFF;
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday, NAFIJ! 🎉</h1>
+    <p>Here's to an amazing year ahead filled with anime, tech, and all the things you love!</p>
+    <button onclick="revealMessage()">Just click already🐍!</button>
+    <p id="hiddenMessage" style="display: none; margin-top: 20px; font-size: 1.5em; color: #FFFFFF;">
+        You’re Ichiban, and it's great to have you as a friend!❄
+    </p>
+
+    <!-- Hidden Image -->
+    <img id="hiddenImage" src="card.jpg" alt="Birthday Surprise">
+    <button onclick="revealImage()">Online gift</button>
+
+    <script>
+        // Reveal Hidden Message
+        function revealMessage() {
+            const message = document.getElementById('hiddenMessage');
+            message.style.display = 'block';
+        }
+
+        // Reveal Hidden Image
+        function revealImage() {
+            const image = document.getElementById('hiddenImage');
+            image.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
